@@ -10,15 +10,17 @@
 </head>
 <body>
     <!-- Sidebar menu -->
-    <nav id="mySidebar" style="display: none;">
-        <a class="exit-btn"></a>
-        <div>
+    <div id="mySidebar" style="display: none;">
+        <div class="top-btn">
+            <img src="_img/close-btn.png" class="exit-btn" onclick="document.getElementById('mySidebar').style.display = 'none'">
+        </div>
+        <nav>
             <a href="">About</a>
             <a href="">Photos</a>
             <a href="">Shop</a>
             <a href="">Contact</a>
-        </div>
-    </nav>
+        </nav>
+    </div>
 
     <!-- PAGE CONTENT -->
     <!-- header -->
@@ -28,7 +30,7 @@
                 <b class="uppercase">Photolio</b>
             </h1>
 
-            <img src="_img/hamburger-btn.png" class="btn middle" onclick="m_open()">
+            <img src="_img/hamburger-btn.png" class="open-btn middle" onclick="document.getElementById('mySidebar').style.display = 'block'">
         </div>
 
         <h1>

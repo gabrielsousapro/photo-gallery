@@ -47,6 +47,43 @@ body {
 /************* 03. Sidebar menu ************
 */
 
+#mySidebar {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.96);
+    position: fixed;
+}
+
+#mySidebar .top-btn {
+    width: 100%;
+    height: 20%;
+}
+
+.top-btn .exit-btn {
+    width: 44px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+#mySidebar nav {
+    text-align: center;
+}
+
+#mySidebar nav a {
+    display: block;
+    color: #777;
+    text-decoration: none;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#mySidebar nav a:hover {
+    color: #fff;
+    transition: 350ms;
+}
+
 
 /************* 04. Header ************
 */
