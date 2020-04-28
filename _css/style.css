@@ -5,7 +5,7 @@
     03. Sidebar menu;
     04. Header;
     05. Box Grid;
-    06. Footer
+    06. Footer.
     
 */
 
@@ -51,7 +51,7 @@ body {
 /************* 04. Header ************
 */
 #header {
-    padding: 50px 0;
+    padding: 10px 0 50px 0;
 }
 
 #header h1 b{
@@ -67,16 +67,48 @@ body {
 }
 
 .top-bar {
-    display: inline-block;
-    width: 84px;
-    float: right;
-    position: relative;
-    top: -80px;
+    width: 100%;
+    padding-right: 15px;
+    text-align: right;
 }
 
 .top-bar img {
     width: 42px;
     cursor: pointer;
+}
+
+.hide-logo{
+    display: none;
+}
+
+@media screen and (max-width: 450px) {
+    #header .logo {
+        display: none;
+    }
+
+    .top-bar {
+        text-align: left;
+    }
+
+    .top-bar img{
+        float: right;
+        margin-top: 5px;
+    }
+
+    .hide-logo {
+        display: inline-block;
+        margin-left: 20px;
+        margin-top: 6px;
+    }
+
+    #header .top-bar .hide-logo b {
+        font-size: 26px;
+    }
+
+    #header p {
+        display: none;
+    }
+
 }
 
 /************* 05. Box Grid ************
