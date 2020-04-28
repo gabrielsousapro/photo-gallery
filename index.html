@@ -12,7 +12,7 @@
     <!-- Sidebar menu -->
     <div id="mySidebar" style="display: none;">
         <div class="top-btn">
-            <img src="_img/close-btn.png" class="exit-btn" onclick="document.getElementById('mySidebar').style.display = 'none'">
+            <img src="_img/close-btn.png" class="exit-btn" onclick="btnClose()">
         </div>
         <nav>
             <a href="">About</a>
@@ -30,7 +30,7 @@
                 <b class="uppercase">Photolio</b>
             </h1>
 
-            <img src="_img/hamburger-btn.png" class="open-btn middle" onclick="document.getElementById('mySidebar').style.display = 'block'">
+            <img src="_img/hamburger-btn.png" class="open-btn middle" onclick="btnOpen()">
         </div>
 
         <h1>
@@ -77,5 +77,14 @@
             <a href="">W3.css</a>
         </p>
     </footer>
+    <script>
+        function btnOpen() {
+            document.getElementById("mySidebar").style.display = "block";
+        }
+        
+        function btnClose() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
 </body>
 </html>
