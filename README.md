@@ -8,7 +8,7 @@
 
 ## Preview
 
- ![](_img/readme-img-desktop.gif)
+ ![](img/readme-img-desktop.gif)
 
 ## License
 
